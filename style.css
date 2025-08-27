@@ -1,0 +1,74 @@
+/* style.css */
+
+
+.calculator {
+background: #1e1e1e;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+max-width: 400px;
+width: 100%;
+}
+
+
+.display {
+background: #000;
+color: #0ff;
+font-size: 2rem;
+padding: 15px;
+border-radius: 10px;
+text-align: right;
+margin-bottom: 10px;
+word-wrap: break-word;
+}
+
+
+.buttons, .scientific {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+}
+
+
+button {
+padding: 20px;
+font-size: 1.2rem;
+border: none;
+border-radius: 10px;
+background: #333;
+color: #fff;
+transition: all 0.2s;
+cursor: pointer;
+}
+
+
+button:hover {
+background: #555;
+}
+
+
+.equals {
+grid-row: span 2;
+background: #0ff;
+color: #000;
+}
+
+
+.scientific {
+margin-top: 10px;
+display: none;
+}
+
+
+@media (max-width: 500px) {
+.display {
+font-size: 1.5rem;
+padding: 10px;
+}
+
+
+button {
+padding: 15px;
+font-size: 1rem;
+}
+}

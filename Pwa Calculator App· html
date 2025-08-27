@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Scientific Calculator PWA</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div class="calculator">
+<div class="display" id="display">0</div>
+<div class="buttons">
+<button onclick="clearDisplay()">C</button>
+<button onclick="backspace()">←</button>
+<button onclick="appendOperator('/')">/</button>
+<button onclick="appendOperator('*')">*</button>
+
+
+<button onclick="appendNumber('7')">7</button>
+<button onclick="appendNumber('8')">8</button>
+<button onclick="appendNumber('9')">9</button>
+<button onclick="appendOperator('-')">-</button>
+
+
+<button onclick="appendNumber('4')">4</button>
+<button onclick="appendNumber('5')">5</button>
+<button onclick="appendNumber('6')">6</button>
+<button onclick="appendOperator('+')">+</button>
+
+
+<button onclick="appendNumber('1')">1</button>
+<button onclick="appendNumber('2')">2</button>
+<button onclick="appendNumber('3')">3</button>
+<button onclick="calculate()" class="equals">=</button>
+
+
+<button onclick="appendNumber('0')">0</button>
+<button onclick="appendNumber('.')">.</button>
+<button onclick="toggleScientific()">Sci</button>
+</div>
+<div class="scientific" id="scientific">
+<button onclick="appendOperator('Math.sin(')">sin</button>
+<button onclick="appendOperator('Math.cos(')">cos</button>
+<button onclick="appendOperator('Math.tan(')">tan</button>
+<button onclick="appendOperator('Math.log(')">log</button>
+<button onclick="appendOperator('Math.sqrt(')">√</button>
+<button onclick="appendOperator('**')">^</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
